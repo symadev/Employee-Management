@@ -6,7 +6,8 @@ $password = '';
 $database = 'company_management';
 
 // Create connection
-$conn = new mysqli($host, $username, $password, $database);
+$conn = new mysqli('localhost', 'root', '', 'company_management');
+
 
 // Check connection
 if ($conn->connect_error) {
