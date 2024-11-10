@@ -2,6 +2,8 @@
 
 A web-based Employee Management System built with PHP and MySQL, designed to perform CRUD (Create, Read, Update, Delete) operations on employee records. The project is hosted on a local XAMPP server for development and testing purposes.
 
+![Project Image](project-image.png)
+
 ## Features
 
 - **Add Employees**: Create new employee records with details like name, position, salary, and hire date.
