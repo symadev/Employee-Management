@@ -14,9 +14,9 @@ A web-based Employee Management System built with PHP and MySQL, designed to per
 
 ## Technologies Used
 
-- **Backend**: PHP, MySQL
-- **Frontend**: HTML, CSS, JavaScript
-- **Server**: XAMPP for local development
+- **Backend**: PHP, MySQL.
+- **Frontend**: HTML, CSS, JavaScript.
+- **Server**: XAMPP for local development.
 
 ## Installation
 
