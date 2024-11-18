@@ -113,23 +113,11 @@ $result = $conn->query($sql);
             <th>Position</th>
             <th>Salary</th>
             <th>Hire Date</th>
-            <th>Actions</th>
+            
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>Manager</td>
-            <td>$5000</td>
-            <td>2024-01-15</td>
-            <td>
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
-            </td>
-        </tr>
-        <!-- Add more rows as needed -->
-    </tbody>
+    
+    
 
     <?php if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) { ?>
@@ -139,10 +127,7 @@ $result = $conn->query($sql);
                 <td><?php echo htmlspecialchars($row['position']); ?></td>
                 <td><?php echo htmlspecialchars($row['salary']); ?></td>
                 <td><?php echo htmlspecialchars($row['hire_date']); ?></td>
-                <td>
-                    <a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a> |
-                    <a href="delete.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Delete this employee?');">Delete</a>
-                </td>
+                
             </tr>
     <?php } } else { ?>
         <tr>
@@ -155,5 +140,6 @@ $result = $conn->query($sql);
 
 <?php $conn->close(); ?>
 </body>
+
 
 </html>
